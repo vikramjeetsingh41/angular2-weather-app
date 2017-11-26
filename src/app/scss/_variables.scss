@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url("./assets/fonts/ProximaNova.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'ProximaNovaReg';
+    src: url("./assets/fonts/ProximaNovaReg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Univia';
+    font-weight: bold;
+    src: url("./assets/fonts/UniviaPro-Bold.otf") format("opentype");
+}
+
+
+/* Variables
+-----------------------------------------------*/
+
+
+/* Font Stack */
+
+$font-stack-main-reg: "ProximaNovaReg",
+"Helvetica",
+"Arial",
+sans-serif;
+$font-stack-main: "ProximaNova",
+"Helvetica",
+"Arial",
+sans-serif;
+$font-stack: "Univia",
+"Helvetica",
+"Arial",
+sans-serif;
+
+/* branding color */
+
+$gray-color:#d9e1e2;
+$gray-div:#e3e9e9;
+$dark:#111111;
+$dark-gray:#383c42;
+$dark-blue:#01294a;
+$light-blue:#007096;
+$gray-range:#e6e6e6;
+$green-color:#42af2a;
+$orange-color:#ffc400;
+$yellow-color:#fbf551;
+$red-color:#ff0036;
+$light-text:#949494;
+$bg-gray:#fcfcfc;
+$bg-line:#f1f1f1;
+$white-color:#ffffff;
+$btn-pri-color: #003057;
+$btn-hover-color: #007096;
+
+$prgTblBg:#F8F8F8;
+$prgTblBorder:#C0C0C0;
+$lighter-blue:#4fbae7;
+$ready:#a304ff;
+$gray-head:#f4f4f5;
+//graphcolors
+$passed:#aff5aa;
+$passedHover:#82ec7a;
+$failed:#f87f7f;
+$retest:#7aa3e5;
+$notsupported:#a0a0a0;
+$blocked:#d9e1e2;
+$untested:#fdb45c;
+//newColors
+$Minor:$notsupported;
+$Moderate:$yellow-color;
+$Major:$orange-color;
+$Critical:$red-color;
+$grid-blue:#00a5cc;
+$rm-bg:#f9f9f9;
+$borderBotHead: #b6bdbe;

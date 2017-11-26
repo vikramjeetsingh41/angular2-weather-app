@@ -1,0 +1,9 @@
+<div class="header">
+  Weather Report
+</div>
+<div class="searchBox">
+  Search Location <input type="text" [(ngModel)] = "searchStr" class="txt" value="" name="search" />
+  <input class="btn" type="button" value="Search" (click)="search()" />
+</div>
+<router-outlet></router-outlet>
+<footer class="footer"></footer>

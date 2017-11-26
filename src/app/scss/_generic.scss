@@ -1,0 +1,153 @@
+body,
+html {
+    font-family: $font-stack-main;
+    background: $gray-color;
+}
+
+h1 {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-family: $font-stack;
+    color: $dark-blue;
+    font-size: 16px;
+    margin: 0;
+}
+
+h2 {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-family: $font-stack;
+    color: $dark;
+    font-size: 12px;
+    margin: 0;
+}
+
+h3 {
+    letter-spacing: .05em;
+    font-family: $font-stack-main;
+    color: $dark;
+    font-size: 13px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.midMargin20 {
+    margin: 20px 0;
+}
+
+.mTop10 {
+    margin-top: 10px!important;
+}
+
+.pTopBottom10 {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+.mBottom30 {
+    margin-bottom: 30px!important;
+}
+
+.mBottom20 {
+    margin-bottom: 20px!important;
+}
+
+.mBottom25 {
+    margin-bottom: 25px;
+}
+
+.mTopRange {
+    margin-top: 10px;
+}
+
+.mTopRangeD {
+    margin-top: 15px;
+}
+
+.mLeft10 {
+    margin-left: 10px;
+}
+
+.mLeft30 {
+    margin-left: 30px;
+}
+
+.pLeft0{
+    padding-left: 0 !important;
+}
+.lowerCase {
+    text-transform: lowercase;
+}
+
+.textalignRight {
+    text-align: right;
+}
+
+.rotate {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.is-loading{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.mat-simple-snackbar-message{
+    bottom: 55px;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: $font-stack-main;
+    letter-spacing: 1px;
+}
+
+
+    .mat-simple-snackbar{
+        justify-content: center;
+    }
+
+    .noData {
+      text-align: center;
+      margin: 35px;
+      color: $light-text;
+      font-family: $font-stack-main;
+      font-size: 14px;
+      p {
+        margin-top: 0;
+      }
+      .material-icons {
+        color: $light-blue;
+      }
+    }
+
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+//tablet
+@media (min-width: 48em) {}

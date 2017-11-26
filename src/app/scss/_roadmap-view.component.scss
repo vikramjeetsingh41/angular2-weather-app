@@ -1,0 +1,268 @@
+//desktop
+$font-size: 12px;
+$line-height: 1.4;
+$lines-to-show: 2;
+@media (min-width: 78em) {
+  .flexbox {
+    /*display: -webkit-flex;
+        display: -ms-flexbox;	 */
+    display: flex;
+    .opportunityhead {
+      margin-top: 19px;
+      background: $grid-blue;
+      color: white;
+      padding: 5px 10px;
+      letter-spacing: 3px;
+      font-size: 11px;
+    }
+    .col {
+      .showSolo {
+        display: none;
+      }
+      .mPreload {
+        .preloader {
+          margin: 40px 0 30px;
+          height: 35px;
+        }
+      }
+      min-height: 134px;
+      background: $rm-bg;
+      flex: 1;
+      margin-right:10px;
+      &.solomode {
+        margin-right: 0;
+        .pure-g {
+          display: block;
+        }
+        .addBorder {
+          border-top: 1px solid $bg-line;
+          margin-top: 10px;
+        }
+        .blockTop {
+          padding-top: 10px;
+        }
+        .blockLeft {
+          padding-left: 10px;
+        }
+        .block {
+          padding: 0 10px 10px;
+        }
+        .blockTopLeft {
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+        .summaryDesc {
+          font-size: 13px;
+          color: $light-text;
+          font-family: $font-stack-main;
+          line-height: 20px;
+        }
+        .summaryBig {
+          color: $light-blue;
+          font-family: $font-stack;
+          font-size: 12px;
+          line-height: 20px;
+          a:hover {
+            text-decoration: underline;
+          }
+          a {
+            color: $light-blue;
+            text-decoration: none;
+          }
+        }
+        .headBig {
+          font-size: 13px;
+          color: $light-text;
+          font-family: $font-stack-main;
+          padding-top: 12px;
+        }
+        .statusBig {
+          line-height: 20px;
+          font-family: $font-stack;
+          font-size: 11px;
+          color: $light-text;
+          &.green {
+            color: $green-color;
+            background: none !important;
+          }
+          .cust {
+            font-family: $font-stack;
+            font-size: 11px;
+            color: $light-text;
+          }
+          .material-icons {
+            font-size: 16px;
+            color: $light-text;
+            margin-left: 5px;
+          }
+        }
+        .showSolo {
+          padding: 15px 15px 0;
+          font-size: 11px;
+          display: block;
+          font-weight: normal;
+          text-transform: none;
+          overflow: hidden;
+          span {
+            font-size: 12px;
+            float: left;
+            &.name {
+              color: $light-blue;
+              font-family: $font-stack;
+              margin-right: 10px;
+              padding-right: 10px;
+            }
+            &.desc {
+              font-size: 13px;
+              width: 80%;
+              padding-left: 10px;
+              color: $light-text;
+              font-family: $font-stack-main;
+              .arr{
+                border-left: 1px solid $gray-range;
+                margin-bottom: 5px;
+                line-height: 21px;
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        .EpicItems {
+          li {
+            min-height: 70px;
+            .head {
+              span {
+                width: 70%;
+              }
+            }
+          }
+        }
+        h1 {
+          background: url('./assets/img/rm-title-bg.png') 0 0 repeat-x !important;
+          padding: 2px;
+          span {
+            border: 1px solid $grid-blue;
+            display: block;
+            padding: 10px;
+          }
+        }
+      }
+      h1 {
+        background: $grid-blue;
+        text-align: center;
+        padding: 8px;
+        color: white;
+      }
+      &.nobg {
+        background: none;
+        h1 {
+          background: $light-blue;
+        }
+      }
+    }
+    .col:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+  .EpicItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .Intensify {
+      -webkit-box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.25);
+    }
+    li {
+      margin: 10px 0 20px;
+      background: white;
+      -webkit-box-shadow: 0px 8px 21px -6px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 8px 21px -6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 28px -6px rgba(0, 0, 0, 0.1);
+      border-top: 2px solid $bg-line;
+      min-height: 132px;
+      padding: 10px 10px 5px 10px;
+      .pure-g {
+        display: none;
+      }
+      .status {
+        font-family: $font-stack;
+        font-size: 10px;
+        border-top: 1px solid $bg-line;
+        padding: 7px 0 0;
+        display: flex;
+        text-align: right;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        &.green {
+          color: $green-color;
+          background: none !important;
+        }
+        .material-icons {
+          font-size: 14px;
+          color: $light-text;
+        }
+      }
+      .projectline {
+        background: $lighter-blue;
+        height: 3px;
+        width: 22px;
+        display: block;
+        margin: 5px 0 20px;
+      }
+      .summary {
+        @extend .ellipseMe;
+        width: 205px;
+        font-family: $font-stack;
+        color: $light-blue;
+        font-size: 12px;
+        a:hover {
+          text-decoration: underline;
+        }
+        a {
+          color: $light-blue;
+          text-decoration: none;
+        }
+      }
+      .priority {
+        margin: 5px 0 15px;
+        display: block;
+        /* Fallback for non-webkit */
+        display: -webkit-box;
+        max-width: 400px;
+        height: $font-size*$line-height*$lines-to-show;
+        /* Fallback for non-webkit */
+        //margin: 0 auto;
+        line-height: $line-height;
+        -webkit-line-clamp: $lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: $font-stack-main;
+        font-size: $font-size;
+        color: $notsupported;
+      }
+      .head {
+        font-size: 11px;
+        color: $light-text;
+        font-family: $font-stack-main;
+        text-align: right;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        span {
+          letter-spacing: 1px;
+          @extend .ellipseMe;
+          font-size: 10px;
+          text-align: left;
+          width: 140px;
+          font-family: $font-stack;
+        }
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}

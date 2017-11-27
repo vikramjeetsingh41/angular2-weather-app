@@ -25,10 +25,10 @@ $baseUrl = 'https://www.metaweather.com/api/location/';
  * Functions
  */
 function quitWithResponse($output, $code = 200) {
+	header('Content-Type: text/json');
+	//http_response_code($code);
 	header('Access-Control-Allow-Origin: *');
 	header("Content-Type: application/json;charset=utf-8");
-	header('Access-Control-Allow-Headers: Content-Type, x-xsrf-token');
-	//http_response_code($code);
 	echo $output;
 	exit;
 }

@@ -94,6 +94,10 @@ export class SearchComponent implements OnInit {
     let dayName = days[d.getDay()];
     return dayName;
   }
+
+  redirectWeatherUrl(event: any): any {
+    return false;
+  }
   
 
 }

@@ -1,17 +1,19 @@
-<div>sdfsdf {{ incomingData }}</div>
-<!-- <div class="loading" *ngIf="isLoading">Loading...</div>
-<div *ngIf="!isLoading"> -->
-  <div>
-    <div>
+<div class="loading" *ngIf="isLoading">Loading...</div>
+<!-- <div class="loading" *ngIf="noRecords">No records found</div> -->
+<div *ngIf="!isLoading">
+  <div *ngIf="title">
+    <span class="titleMain">{{title}}</span>
+  </div>
 <div *ngFor="let weather of weathers" class="weather-cont" (click)="goToWeatherDetails(weather.woeid)">
   <div class="inner-cont">
     <div class="sec1">
         <div class="title">{{weather.title}}</div>
-        <div class="date">{{weather.applicable_date}}</div>
+        <div *ngIf="!day" class="date">{{weather.applicable_date}}</div>
+        <div *ngIf="day" class="date">{{weather.day}}</div>
         <div class="img"><img src={{weather.icon_url}} /><span class="big-temp">{{weather.the_temp}}&#8451;</span></div>
     </div>
     <div class="sec2">
-        <div class="temp status">{{weather.weather_state_name}}</div>
+        <div class="temp status">{{weather.state_name}}</div>
         <div class="temp"><span>Min:</span> {{weather.min_temp}}&#8451;</div>
         <div class="temp"><span>Max:</span> {{weather.max_temp}}&#8451;</div>
         <div class="temp"><span>Humidity:</span> {{weather.humidity}}</div>

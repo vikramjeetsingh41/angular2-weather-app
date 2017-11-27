@@ -1852,6 +1852,10 @@ margin-top: 35px;
   float: left;
 }
 
+.titleMain {
+  font-size: 20px;
+}
+
 .weather-cont .sec2 .temp.status {
   color: #878787;
   font-size: 17px;

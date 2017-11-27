@@ -55,7 +55,7 @@ export class MainComponent implements OnInit, OnDestroy {
           "min_temp": parseFloat(response.consolidated_weather[0].min_temp).toFixed(2),
           "max_temp": parseFloat(response.consolidated_weather[0].max_temp).toFixed(2),
           "humidity": parseFloat(response.consolidated_weather[0].humidity).toFixed(2) + "%",
-          "weather_state_name": response.consolidated_weather[0].weather_state_name,
+          "state_name": response.consolidated_weather[0].weather_state_name,
           "applicable_date": response.consolidated_weather[0].applicable_date,
           "woeid": response.woeid,
           "icon_url": this.sharedDataService.weatherStaticEndPoint + response.consolidated_weather[0].weather_state_abbr + ".svg"
@@ -71,8 +71,8 @@ export class MainComponent implements OnInit, OnDestroy {
       });
   }
 
-  goToWeatherDetails(id) {
-    this.router.navigate(['/weather', id]);
+  redirectWeatherUrl(event: any): any {
+    this.router.navigate(['/weather', event]);
   }
 
   ngOnDestroy() {

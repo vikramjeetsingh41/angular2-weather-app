@@ -52,6 +52,7 @@ export class WeatherdetailsComponent implements OnInit {
 
   getDayWeatherReport(weather) {
     let objData = {
+      "title": this.title,
       "applicable_date": weather.applicable_date,
       "day": this.getDay(weather.applicable_date),
       "abbr": weather.weather_state_abbr,
@@ -72,6 +73,10 @@ export class WeatherdetailsComponent implements OnInit {
     let d = new Date(date);
     let dayName = days[d.getDay()];
     return dayName;
+  }
+
+  redirectWeatherUrl(event: any): any {
+    return false;
   }
   
 
